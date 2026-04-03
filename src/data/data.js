@@ -9,6 +9,9 @@ import { FaHandHoldingWater, FaHandsHelping } from "react-icons/fa";
 import { GiMedicines } from "react-icons/gi";
 import { IoFastFoodOutline, IoSchoolOutline } from "react-icons/io5";
 
+export const DONATION_LINK = `http://human-welfare.org/donation-page/`;
+export const ABOUT_US = `https://human-welfare.org/about-us/`;
+
 export const prjects = [
   {
     title: "Shelter of Love",
@@ -265,4 +268,43 @@ export const goals = [
     label: "Zero Hunger",
     icon: IoFastFoodOutline,
   },
+];
+
+// footer section
+export const initiatives = [
+  {
+    label: "shelter of love",
+    link: "https://human-welfare.org/shelter-of-love-naigaon/",
+  },
+  {
+    label: "Project kartavya",
+    link: "https://human-welfare.org/project-kartavya/",
+  },
+  {
+    label: "project poshan",
+    link: "https://human-welfare.org/project-poshan/",
+  },
+  {
+    label: "project magic box",
+    link: "https://human-welfare.org/project-magic-box/",
+  },
+  {
+    label: "animal welfare",
+    link: "https://human-welfare.org/animal-welfare/",
+  },
+  {
+    label: "CSR partnership",
+    link: "https://human-welfare.org/csr-partnership/",
+  },
+];
+export const quickLinks = [
+  { label: "About us", link: "#home" },
+  { label: "SDG goals", link: "#goals" },
+  { label: "Blog", link: "#blogs" },
+  { label: "join our club", link: "#partnership" },
+  {
+    label: "annual report 2023-24",
+    link: "http://human-welfare.org/wp-content/uploads/2024/03/HWCT-ANNUAL-REPORT-2024.pdf",
+  },
+  { label: "donate", link: "http://human-welfare.org/donation-page/" },
 ];

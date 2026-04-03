@@ -6,6 +6,7 @@ import PartnerWithUs from "./pages/PartnerWithUs";
 import Projects from "./pages/Projects";
 import "./App.css";
 import Goals from "./pages/Goals";
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -15,20 +16,21 @@ export default function App() {
         <Home />
 
         <LazySection>
-          <Goals />
-        </LazySection>
-
-        <LazySection>
           <Projects />
         </LazySection>
 
         <LazySection>
           <Blogs />
         </LazySection>
-        
+
+        <LazySection>
+          <Goals />
+        </LazySection>
+
         <LazySection>
           <PartnerWithUs />
         </LazySection>
+        <Footer />
       </main>
     </>
   );

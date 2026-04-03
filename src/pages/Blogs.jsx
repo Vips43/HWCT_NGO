@@ -2,7 +2,7 @@ import { blogs } from "../data/data";
 
 function Blogs() {
   return (
-    <section className="w-full mx-auto py-16 px-6 md:px-12 lg:px-16 overflow-hidden bg-linear-to-r from-main-bg-700 to-primary-700">
+    <section id="blogs" className="w-full mx-auto py-16 px-6 md:px-12 lg:px-16 overflow-hidden bg-linear-to-r from-main-bg-700 to-primary-700">
       <div className="flex items-center justify-between mb-10">
         <div className="space-y-2">
           <div className="flex items-center gap-3">

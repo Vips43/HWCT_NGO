@@ -15,6 +15,12 @@
   --color-main-bg-50: #cfcfcf;
   --color-main-text: #ededed;
   --color-goal-icons: #667a62;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  --animate-marquee: marquee 25s linear infinite;
 }
 
 @layer base {
@@ -40,8 +46,5 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-500);
   }
-}
-
-.color {
-  background-color: #6d6c6c;
+  
 }

@@ -11,7 +11,7 @@ function Projects() {
 
   return (
     <>
-      <section className="bg-main-bg-600 w-full py-16 px-6 md:px-12 lg:px-16">
+      <section id="projects" className="bg-main-bg-600 w-full py-16 px-6 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto space-y-12">
         
         <div className="text-main-text space-y-4 max-w-2xl">

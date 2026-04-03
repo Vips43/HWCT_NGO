@@ -2,7 +2,7 @@ import { partner } from "../data/data";
 
 function PartnerWithUs() {
   return (
-    <section className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-16">
+    <section id="partnership" className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-16">
 
       <div className="max-w-3xl mx-auto text-center space-y-6">
         <h3 className="text-4xl md:text-5xl font-bold tracking-tight">

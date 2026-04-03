@@ -1,7 +1,20 @@
 import Typewriter from "typewriter-effect";
 import Button from "../components/Button";
+import { ABOUT_US, DONATION_LINK } from "../data/data";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Home() {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    const getData = async () => {
+      console.log("getting...");
+      let results = await axios.get(`http://localhost:3000/data`);
+      results = results.data;
+      setData(results);
+    };
+    getData();
+  }, []);
   const labels = [
     "No Poverty",
     "Zero Hunger",
@@ -12,8 +25,8 @@ function Home() {
   ];
 
   return (
-    <section className="grid lg:grid-cols-2 min-h-[85vh]">
-      <div className="bg-main-bg-600 p-8 md:p-16 flex flex-col justify-center space-y-12">
+    <section id="home" className="grid lg:grid-cols-2 min-h-[85vh]">
+      <div className="bg-main-bg-600 p-8 md:p-16 flex flex-col justify-center space-y-12 overflow-auto">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold flex flex-col gap-2 text-main-text tracking-tight">
           <span>Transforming</span>
           <span className="text-primary-400 font-script min-h-[1.2em]">
@@ -36,19 +49,33 @@ function Home() {
             digital learning, and build lasting opportunities.
           </p>
           <div className="flex flex-col sm:flex-row md:flex-col gap-4 justify-center md:w-2/5">
-            <Button bgcolor="bg-primary-500 w-full sm:w-fit md:w-full" text="Donate now" />
+            <Button
+              bgcolor="bg-primary-500 w-full sm:w-fit md:w-full"
+              text="Donate now"
+              link={DONATION_LINK}
+            />
             <Button
               bgcolor="outline w-full sm:w-fit md:w-full"
               textclr="text-white hover:bg-white hover:text-main-bg-600 transition-colors"
-              text="Our Story"
+              text="About us"
+              link={ABOUT_US}
             />
           </div>
         </div>
-
-        <div className="grid grid-cols-3 gap-4 pt-4">
-          <StatItem number="1200+" label="Children Supported" />
-          <StatItem number="200+" label="Schools Supported" />
-          <StatItem number="800+" label="Students Reached" />
+        <div className="flex gap-6 pt-4 overflow-auto scrollbar-hidden">
+          {Object.entries(data).map(([label, value]) => (
+            <div
+              key={label}
+              className="group shrink-0 flex flex-col items-center justify-center"
+            >
+              <span className="text-2xl md:text-4xl font-extrabold text-primary-400 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
+                {value || "0"}+
+              </span>
+              <span className="text-[9px] md:text-xs font-medium text-main-text/70 text-center uppercase tracking-wider mt-1">
+                {label}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -79,7 +106,8 @@ function Home() {
             HWCT believes in innovative ideas to change the lives of the
             underprivileged. With our initiatives:{" "}
             <span className="text-primary-700 font-semibold hover:text-primary-400 transition-colors cursor-pointer">
-              Shelter of Love, Project Kartavya, Project Poshan, and Project Magic Box
+              Shelter of Love, Project Kartavya, Project Poshan, and Project
+              Magic Box
             </span>
             , we have brought a huge change to the lives of many underprivileged
             men, women, and children.
@@ -108,30 +136,17 @@ function Home() {
             </h3>
             <h2 className="text-3xl font-bold">Why Us?</h2>
             <p className="max-w-sm text-sm">
-              Our vision and dedication have proven to create a significant impact
-              in changing the lives of many for the better.
+              Our vision and dedication have proven to create a significant
+              impact in changing the lives of many for the better.
             </p>
           </div>
-          
+
           <button className="px-8 py-4 bg-main-text text-gray-700 font-bold rounded-xl hover:-translate-y-1 hover:shadow-xl hover:shadow-main-text/20 transition-all duration-300 whitespace-nowrap">
             Download Brochure
           </button>
         </div>
       </div>
     </section>
-  );
-}
-
-function StatItem({ number, label }) {
-  return (
-    <div className="flex flex-col items-center justify-center space-y-1 p-3 rounded-xl hover:bg-white/5 transition-colors duration-300 cursor-default group">
-      <span className="text-2xl md:text-4xl font-extrabold text-primary-400 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
-        {number}
-      </span>
-      <span className="text-xs md:text-sm font-medium text-main-text/70 text-center uppercase tracking-wider">
-        {label}
-      </span>
-    </div>
   );
 }
 
