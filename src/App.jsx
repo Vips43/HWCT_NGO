@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Blogs from "./pages/Blogs";
 import Home from "./pages/Home";
 import PartnerWithUs from "./pages/PartnerWithUs";
-import Projects from "./pages/Projects";
+import Projects_Causes from "./pages/Projects_Causes";
 import "./App.css";
 import Goals from "./pages/Goals";
 import Footer from "./pages/Footer";
@@ -16,7 +16,7 @@ export default function App() {
         <Home />
 
         <LazySection>
-          <Projects />
+          <Projects_Causes />
         </LazySection>
 
         <LazySection>

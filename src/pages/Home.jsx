@@ -24,6 +24,8 @@ function Home() {
     "Partnership",
   ];
 
+  
+
   return (
     <section id="home" className="grid lg:grid-cols-2 min-h-[85vh]">
       <div className="bg-main-bg-600 p-8 md:p-16 flex flex-col justify-center space-y-12 overflow-auto">
@@ -78,6 +80,7 @@ function Home() {
           ))}
         </div>
       </div>
+      
 
       <div className="bg-main-bg-200 p-8 md:p-16 flex flex-col justify-center space-y-10 group relative overflow-hidden">
         <div className="absolute top-[-15%] right-[-15%] w-96 h-96 bg-primary-500/5 rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-125 pointer-events-none"></div>
