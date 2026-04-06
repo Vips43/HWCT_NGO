@@ -24,7 +24,7 @@ function Projects_Causes() {
               </h2>
             </div>
             <h3 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Discover Our Impact
+              Discover Our Impact & Causes
             </h3>
             <p className="text-main-text/70 text-lg leading-relaxed pt-2">
               From nutrition to digital learning — each initiative creates

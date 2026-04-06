@@ -29,7 +29,7 @@ export const prjects = [
         id: "edu1",
       },
       {
-        label: "fees for girl child: 4800/- (Per Child / Yearly Fees)",
+        label: "Fees for girl child: 4800/- (Per Child / Yearly Fees)",
         amt: 4800,
         id: "edu2",
       },
@@ -40,25 +40,25 @@ export const prjects = [
       },
     ],
   },
-  {
-    title: "Covid-19 Relief",
-    label: "Medical",
-    description:
-      "The COVID-19 pandemic is one of the worst health and economic crises in modern history and it continues to require the best of humanity to overcome. Your donation to this fund will help stop COVID-19’s spread and protect us all. Now, more than ever, health workers need our support. As COVID-19 continues to spread, they’re on the front lines at this very moment—in hospitals, clinics, and triage centers around the world—putting themselves at risk to stop this pandemic. We know that health workers need training,",
-    img: "/covid-19.jpg",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "https://human-welfare.org/covid-19-relief/",
-  },
-  {
-    title: "Project Kartavya",
-    label: "career",
-    description:
-      "Project Kartavya aims to work closely with stakeholders in schools especially teachers and principals to ensure that they create platforms in schools where children have the opportunities to learn about careers from activities like career exhibitions, career clubs and presentations from experts from different sectors. It also engages with the parents to build their capacity in positive parenting skills, exposure to different educational and career options, and the ways to improve the communication with their children. All these initiatives lead to creating a conducive environment at home, school and in the community.",
-    img: "/project-kartavya.jpg",
-    btnlabel: "Believe in Responsibility",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "https://human-welfare.org/project-kartavya/",
-  },
+  // {
+  //   title: "Covid-19 Relief",
+  //   label: "Medical",
+  //   description:
+  //     "The COVID-19 pandemic is one of the worst health and economic crises in modern history and it continues to require the best of humanity to overcome. Your donation to this fund will help stop COVID-19’s spread and protect us all. Now, more than ever, health workers need our support. As COVID-19 continues to spread, they’re on the front lines at this very moment—in hospitals, clinics, and triage centers around the world—putting themselves at risk to stop this pandemic. We know that health workers need training,",
+  //   img: "/covid-19.jpg",
+  //   donation: "http://human-welfare.org/donation-page/",
+  //   link: "https://human-welfare.org/covid-19-relief/",
+  // },
+  // {
+  //   title: "Project Kartavya",
+  //   label: "career",
+  //   description:
+  //     "Project Kartavya aims to work closely with stakeholders in schools especially teachers and principals to ensure that they create platforms in schools where children have the opportunities to learn about careers from activities like career exhibitions, career clubs and presentations from experts from different sectors. It also engages with the parents to build their capacity in positive parenting skills, exposure to different educational and career options, and the ways to improve the communication with their children. All these initiatives lead to creating a conducive environment at home, school and in the community.",
+  //   img: "/project-kartavya.jpg",
+  //   btnlabel: "Believe in Responsibility",
+  //   donation: "http://human-welfare.org/donation-page/",
+  //   link: "https://human-welfare.org/project-kartavya/",
+  // },
   {
     title: "Project Poshan",
     label: "NUTRITION",
@@ -75,7 +75,7 @@ export const prjects = [
         id: "nut1",
       },
       {
-        label: "fruits and Milk for the Events:5500/-(Event)",
+        label: "Fruits and Milk for the Events:5500/-(Event)",
         amt: "5500",
         id: "nut2",
       },
@@ -143,6 +143,59 @@ export const prjects = [
     ],
   },
   {
+    title: "Green Revolution",
+    label: "revolution",
+    description: "",
+    img: "/green-revolution.jpg",
+    btnlabel: "Donate",
+    donation: "http://human-welfare.org/donation-page/",
+    link: "",
+    causes: [
+      {
+        label: "Garden maintenance serving 180 children: 3000/-",
+        amt: "3000",
+        id: "rev1",
+      },
+      {
+        label: "plant the vegetables: 1500/- (Appx. area 200 Sqft)",
+        amt: "1500",
+        id: "rev2",
+      },
+      {
+        label: "Plantation Drive: 1250/- (will help us plant 10neem trees)",
+        amt: "1250",
+        id: "rev3",
+      },
+    ],
+  },
+  {
+    title: "Women Empowerment",
+    label: "empowerment",
+    description: "",
+    img: "/women-empowerment.jpg",
+    btnlabel: "Donate",
+    donation: "http://human-welfare.org/donation-page/",
+    link: "",
+    causes: [
+      {
+        label: "Tailoring cost towards Skill Learning:3000/-(Per Women)",
+        amt: "3000",
+        id: "wom1",
+      },
+      {
+        label: "Fabrics for Rags to Bags Initiative:2000/-(200 Bags)",
+        amt: "2000",
+        id: "wom2",
+      },
+      {
+        label:
+          "Operational Expenses for the initiative: 1500/- (Will help us to cover salaries)",
+        amt: "1500",
+        id: "wom3",
+      },
+    ],
+  },
+  {
     title: "Celebrate your happiness at Orphanage",
     label: "Celebrate",
     description:
@@ -188,13 +241,6 @@ export const partner = [
 ];
 
 export const blogs = [
-  {
-    title: "“HWCT helps in rescuing cat- Alisa”-Kamakshi Verma",
-    description:
-      "We found an injured cat in the streets of Malvani. It was lying in a puddle of blood, at the very corner of the street, desperate for help, but unable to move. People crowded around her but nobody came forward to help her. Team HWCT decided to rescue her. The cat was probably hit by a car or any heavy vehicle. The cat had severely injured limbs and a deep cut on its neck! We were worried about the cat and doubted whether the cat would be able to survive or not!  Our team decided to take her to the",
-    img: "/blogs/1.jpg",
-    link: "https://human-welfare.org/hwct-helps-in-rescuing-cat-alisa-kamakshi-verma/",
-  },
   {
     title: "“HWCT helps in Distribution of Food”- Kamakshi Verma",
     description:
@@ -310,6 +356,13 @@ export const blogs = [
       "It was just a usual day for HWCT, distributing education kits to the students of a school in Atone village, Maharashtra. After a long day when we were about to leave for Mumbai, a woman in her late 20s or early 30s came up to us saying, “Hi, I heard you help kids with education. I have a daughter who wants to study and work in a good company in Mumbai”. Though we have had heard similar things too many times now, the woman determination just gave us a different vibe. On our way to her house, she told us",
     img: "/blogs/17.jpg",
     link: "https://human-welfare.org/i-am-always-learning-new-things/",
+  },
+  {
+    title: "“HWCT helps in rescuing cat- Alisa”-Kamakshi Verma",
+    description:
+      "We found an injured cat in the streets of Malvani. It was lying in a puddle of blood, at the very corner of the street, desperate for help, but unable to move. People crowded around her but nobody came forward to help her. Team HWCT decided to rescue her. The cat was probably hit by a car or any heavy vehicle. The cat had severely injured limbs and a deep cut on its neck! We were worried about the cat and doubted whether the cat would be able to survive or not!  Our team decided to take her to the",
+    img: "/blogs/1.jpg",
+    link: "https://human-welfare.org/hwct-helps-in-rescuing-cat-alisa-kamakshi-verma/",
   },
 ];
 

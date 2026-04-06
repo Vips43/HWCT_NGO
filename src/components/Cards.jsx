@@ -11,10 +11,9 @@ function Cards({ data }) {
       const label = container.querySelector("label");
       const input = container.querySelector("input");
       const amount = label.dataset.price;
-      setAmt(amount)
+      setAmt(amount);
     }
   };
-
 
   return (
     <article className="group bg-main-bg-700 flex flex-col w-full overflow-hidden rounded-2xl border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/10 cursor-pointer">
@@ -73,16 +72,20 @@ function Cards({ data }) {
               onChange={handleClick}
             >
               {data.causes.map((cause) => (
-                <div key={cause.id} className="mt-3 radio flex items-center gap-2">
+                <div
+                  key={cause.id}
+                  className="mt-3 radio flex items-center gap-2"
+                >
                   <input
                     type="radio"
                     name={data.label}
                     value={100}
                     id={cause.id}
                     className="peer w-4 h-4 accent-primary-500 cursor-pointer"
-                  />
+                  /> 
                   <label
-                    htmlFor={cause.id} data-price={cause.amt}
+                    htmlFor={cause.id}
+                    data-price={cause.amt}
                     className="cursor-pointer transition-colors duration-200 peer-checked:text-primary-400 peer-checked:font-semibold"
                   >
                     {cause.label}
@@ -99,7 +102,7 @@ function Cards({ data }) {
               href={data.donation || data.link}
               className="flex items-center justify-center w-full rounded-xl bg-primary-500 py-3 text-sm font-bold text-main-bg-900 transition-all duration-300 hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/20 active:scale-95"
             >
-              {data.btnlabel} - {amt}
+              {data.btnlabel} {amt && " - " + amt }
             </a>
           </footer>
         )}
