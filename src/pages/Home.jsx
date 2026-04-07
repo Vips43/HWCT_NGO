@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 import Button from "../components/Button";
-import { ABOUT_US, DONATION_LINK } from "../data/data";
+import { ABOUT_US } from "../data/data";
 import Socials from "../components/Socials";
 
 function Home() {
@@ -115,8 +115,8 @@ function Home() {
           </div>
 
           {/* Socials Block */}
-          <div className="space-y-3">
-            <h3 className="text-2xl text-center font-bold uppercase tracking-wider text-main-bg-600">
+          <div className="space-y-5 mb-10 mx-auto">
+            <h3 className="text-xl text-center font-bold uppercase tracking-wider text-main-bg-600">
               Connect With Us
             </h3>
             <Socials />
@@ -124,20 +124,24 @@ function Home() {
 
         </div>
 
-        {/* Bottom Footer Area (Socials & Brochure aligned together) */}
-        <div className="relative z-10 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
-          
-          {/* Brochure Download */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 relative z-10">
+          <div className="space-y-2">
+            <h3 className="text-primary-700 font-bold uppercase tracking-wider text-sm">
+              HWCT India
+            </h3>
+            <h2 className="text-3xl font-bold">Why Us?</h2>
+            <p className="max-w-sm text-sm">
+              Our vision and dedication have proven to create a significant
+              impact in changing the lives of many for the better.
+            </p>
+          </div>
+
           <a
             href="http://human-welfare.org/wp-content/uploads/2022/12/HWCT-Brief-Brochure-Email.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 mt-14 lg:mt-0 bg-gray-900 text-white text-sm font-bold rounded-xl hover:-translate-y-1 hover:bg-primary-700 hover:shadow-xl transition-all duration-300 whitespace-nowrap flex items-center gap-2"
+            className="px-8 py-4 bg-main-text text-gray-700 font-bold rounded-xl hover:-translate-y-1 hover:shadow-xl hover:shadow-main-text/20 transition-all duration-300 whitespace-nowrap"
           >
-            <span>Download Brochure</span>
-            <span className="text-lg">↓</span>
+            Download Brochure
           </a>
-          
         </div>
       </div>
       

@@ -1,4 +1,3 @@
-
 function CausesCard1({ cause }) {
   const Icon = cause.icon;
   
