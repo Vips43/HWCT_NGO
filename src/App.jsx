@@ -14,9 +14,12 @@ export default function App() {
     <>
       <main className="">
         <Navbar />
-        <Causes />
         <Home />
 
+        <LazySection>
+          <Causes />
+        </LazySection>
+        
         <LazySection>
           <Projects_Causes />
         </LazySection>
