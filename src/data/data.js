@@ -15,7 +15,7 @@ import { PiTreeEvergreenFill } from "react-icons/pi";
 export const DONATION_LINK = `http://human-welfare.org/donation-page/`;
 export const ABOUT_US = `https://human-welfare.org/about-us/`;
 
-export const prjects = [
+export const projects = [
   {
     title: "Shelter of Love",
     label: "Education",

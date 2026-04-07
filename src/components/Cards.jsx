@@ -8,7 +8,7 @@ function Cards({ data }) {
           className="absolute inset-0 h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
           loading="lazy"
         />
-        {/* Note: if bg-linear-to-t isn't working in your Tailwind version, change it to bg-gradient-to-t */}
+        
         <div className="absolute inset-0 bg-linear-to-t from-main-bg-700 via-transparent to-transparent opacity-80" />
       </figure>
 
@@ -25,7 +25,7 @@ function Cards({ data }) {
           )}
 
           <a href={data.link} className="block">
-            <h4 className="text-2xl font-bold leading-snug text-main-text group-hover:text-primary-400 transition-colors duration-300">
+            <h4 className="text-2xl font-bold leading-snug text-main-text group-hover:text-primary-400 line-clamp-2 transition-colors duration-300">
               {data.title}
             </h4>
           </a>
