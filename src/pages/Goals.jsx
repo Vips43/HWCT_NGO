@@ -41,7 +41,7 @@ function Goals() {
                   <div className="h-20 mx-auto aspect-square rounded-full grid place-items-center bg-primary">
                     <IconComp size={32} strokeWidth={2} />
                   </div>
-                  <figcaption className="max-w-24 text-center">
+                  <figcaption className="max-w-24 text-xs text-center">
                     {goal.label}
                   </figcaption>
                 </figure>

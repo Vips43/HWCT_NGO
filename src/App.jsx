@@ -19,7 +19,7 @@ export default function App() {
         <LazySection>
           <Causes />
         </LazySection>
-        
+
         <LazySection>
           <Projects />
         </LazySection>

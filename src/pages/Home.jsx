@@ -25,7 +25,7 @@ function Home() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold flex flex-col gap-2 text-main-text tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold flex flex-col gap-2 text-main-text tracking-tight leading-tight">
             <span>Empowering</span>
             <span className="text-primary-400 font-script min-h-[1.2em] font-normal tracking-normal">
               <Typewriter
