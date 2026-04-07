@@ -119,30 +119,26 @@ function Home() {
             </p>
           </div>
 
-          <a
-            href="http://human-welfare.org/wp-content/uploads/2022/12/HWCT-Brief-Brochure-Email.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-gray-900 text-white text-sm font-bold rounded-xl hover:-translate-y-1 hover:bg-primary-700 w-fit hover:shadow-xl transition-all duration-300 whitespace-nowrap flex items-center gap-2"
-          >
-            <span>Download Brochure</span>
-            <span className="text-lg">↓</span>
-          </a>
-        </div>
-
-        {/* Bottom Footer Area (Socials & Brochure aligned together) */}
-        <div className="relative z-10 mt-16 pt-8 border-t border-gray-300 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
-          {/* Socials Block */}
-          <div className="space-y-3">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500">
-              Connect With Us
-            </h3>
-            {/* The wrapper inside your Socials component handles the row layout */}
-            <Socials />
+          <div className="relative text-center flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
+            {/* Socials Block */}
+            <div className="space-y-3 mx-auto">
+              <h3 className="text-xl font-bold uppercase tracking-wider text-main-bg-600">
+                Connect With Us
+              </h3>
+              <Socials />
+            </div>
           </div>
-
-          {/* Brochure Download */}
         </div>
+
+        <a
+          href="http://human-welfare.org/wp-content/uploads/2022/12/HWCT-Brief-Brochure-Email.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 mt-14 lg:mt-0 bg-gray-900 text-white text-sm font-bold rounded-xl hover:-translate-y-1 hover:bg-primary-700 w-fit hover:shadow-xl transition-all duration-300 whitespace-nowrap flex items-center gap-2"
+        >
+          <span>Download Brochure</span>
+          <span className="text-lg">↓</span>
+        </a>
       </div>
     </section>
   );

@@ -289,47 +289,24 @@ export const quickLinks = [
 
 export const causes = [
   {
-    category: "Women Empowerment",
-    icon: GrRestroomWomen,
-    icClr: "#FF88BA",
+    category: "Education",
+    icon: GraduationCap,
+    icClr: "#262626",
     items: [
       {
-        id: "wom1",
-        label: "Tailoring cost towards Skill Learning:3000/-(Per Women)",
-        amt: 3000,
+        id: "edu1",
+        label: "Note Books and stationery for 180 children: 9000/-",
+        amt: 9000,
       },
       {
-        id: "wom2",
-        label: "Fabrics for Rags to Bags Initiative:2000/-(200 Bags)",
-        amt: 2000,
+        id: "edu2",
+        label: "Fees for girl child: 4800/- (Per Child / Yearly Fees)",
+        amt: 4800,
       },
       {
-        id: "wom3",
-        label:
-          "Operational Expenses for the initiative: 1500/- (Will help us to cover salaries)",
-        amt: 1500,
-      },
-    ],
-  },
-  {
-    category: "Green Revolution",
-    icon: PiTreeEvergreenFill,
-    icClr: "#346739",
-    items: [
-      {
-        id: "rev1",
-        label: "Garden maintenance serving 180 children: 3000/-",
-        amt: 3000,
-      },
-      {
-        id: "rev2",
-        label: "Plant the vegetables: 1500/- (Appx. area 200 Sqft)",
-        amt: 1500,
-      },
-      {
-        id: "rev3",
-        label: "Plantation Drive: 1250/- (will help us plant 10neem trees)",
-        amt: 1250,
+        id: "edu3",
+        label: "Uniforms, shoes and bags: 750/- (Per Child)",
+        amt: 750,
       },
     ],
   },
@@ -356,24 +333,25 @@ export const causes = [
     ],
   },
   {
-    category: "Education",
-    icon: GraduationCap,
-    icClr: "#262626",
+    category: "Women Empowerment",
+    icon: GrRestroomWomen,
+    icClr: "#FF88BA",
     items: [
       {
-        id: "edu1",
-        label: "Note Books and stationery for 180 children: 9000/-",
-        amt: 9000,
+        id: "wom1",
+        label: "Tailoring cost towards Skill Learning:3000/-(Per Women)",
+        amt: 3000,
       },
       {
-        id: "edu2",
-        label: "Fees for girl child: 4800/- (Per Child / Yearly Fees)",
-        amt: 4800,
+        id: "wom2",
+        label: "Fabrics for Rags to Bags Initiative:2000/-(200 Bags)",
+        amt: 2000,
       },
       {
-        id: "edu3",
-        label: "Uniforms, shoes and bags: 750/- (Per Child)",
-        amt: 750,
+        id: "wom3",
+        label:
+          "Operational Expenses for the initiative: 1500/- (Will help us to cover salaries)",
+        amt: 1500,
       },
     ],
   },
@@ -401,6 +379,28 @@ export const causes = [
     ],
   },
   {
+    category: "Green Revolution",
+    icon: PiTreeEvergreenFill,
+    icClr: "#346739",
+    items: [
+      {
+        id: "rev1",
+        label: "Garden maintenance serving 180 children: 3000/-",
+        amt: 3000,
+      },
+      {
+        id: "rev2",
+        label: "Plant the vegetables: 1500/- (Appx. area 200 Sqft)",
+        amt: 1500,
+      },
+      {
+        id: "rev3",
+        label: "Plantation Drive: 1250/- (will help us plant 10neem trees)",
+        amt: 1250,
+      },
+    ],
+  },
+  {
     category: "Animal Welfare",
     icClr: "#DD9E59",
     icon: FaDog,
@@ -419,6 +419,144 @@ export const causes = [
         id: "res3",
         label:
           "Operational Expenses: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+];
+
+export const causes1 = [
+  {
+    category: "Education",
+    icon: GraduationCap,
+    icClr: "#262626",
+    items: [
+      {
+        id: "edu1",
+        label: "Donate for Note Books and stationery for 180 children: 9000/- (One Time)",
+        amt: 9000,
+      },
+      {
+        id: "edu2",
+        label: "Sponsor the yearly fees for girl child: 4800/- (Per Child / Yearly Fees)",
+        amt: 4800,
+      },
+      {
+        id: "edu3",
+        label: "Donate for Uniforms, shoes and bags: 750/- (Per Child)",
+        amt: 750,
+      },
+    ],
+  },
+  {
+    category: "Nutrition",
+    icon: IoNutritionOutline,
+    icClr: "#346739",
+    items: [
+      {
+        id: "nut1",
+        label: "Donate for Meals for 180 children: 6000/- (One Time)",
+        amt: 3000,
+      },
+      {
+        id: "nut2",
+        label: "Donate for fruits and Milk for the Events: 5500/- (Nutrition Event)",
+        amt: 5500,
+      },
+      {
+        id: "nut3",
+        label: "Donate for Medical Camp: 5000/- (will support 50 children for the camp)",
+        amt: 5000,
+      },
+    ],
+  },
+  {
+    category: "Women Empowerment",
+    icon: GrRestroomWomen,
+    icClr: "#FF88BA",
+    items: [
+      {
+        id: "wom1",
+        label: "Donate for the Tailoring cost towards Skill Learning: 3000/- (Per Women)",
+        amt: 3000,
+      },
+      {
+        id: "wom2",
+        label: "Donate for Fabrics for Rags to Bags Initiative: 2000/- (Will support the fabric for 200 Bags)",
+        amt: 2000,
+      },
+      {
+        id: "wom3",
+        label:
+          "Donate for Operational Expenses for the initiative: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+  {
+    category: "Digital Learning",
+    icon: FaComputer,
+    icClr: "gray",
+    items: [
+      {
+        id: "dig1",
+        label: "Donate for Computers to have the Digital Access: 5000/- (Part Donation)",
+        amt: 5000,
+      },
+      {
+        id: "dig2",
+        label: "Sponsor the yearly fees for Digital Learning per child: 1500/- (Per Child / Yearly Fees)",
+        amt: 1500,
+      },
+      {
+        id: "dig3",
+        label:
+          "Donate for Operational Expenses for the initiative: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+  {
+    category: "Green Revolution",
+    icon: PiTreeEvergreenFill,
+    icClr: "#346739",
+    items: [
+      {
+        id: "rev1",
+        label: "Donate for Garden maintenance serving 180 children: 3000/- (One Time)",
+        amt: 3000,
+      },
+      {
+        id: "rev2",
+        label: "Help us plant the vegetables: 1500/- (Approx estimated for 200 Sq Feets)",
+        amt: 1500,
+      },
+      {
+        id: "rev3",
+        label: "Donate for Plantation Drive: 1250/- (will help us plant 10 neem trees)",
+        amt: 1250,
+      },
+    ],
+  },
+  {
+    category: "Animal Welfare",
+    icClr: "#DD9E59",
+    icon: FaDog,
+    items: [
+      {
+        id: "res1",
+        label: "Donate for Feeding Drives for Strays: 3000/- (will serve meals to 200 strays)",
+        amt: 3000,
+      },
+      {
+        id: "res2",
+        label: "Sponsor the Neutering / Spaying for strays: 2000/- (Per stray Cat / Dog)",
+        amt: 2000,
+      },
+      {
+        id: "res3",
+        label:
+          "Donate for Operational Expenses for the initiative: 1500/- (Will help us to cover the salaries)",
         amt: 1500,
       },
     ],
