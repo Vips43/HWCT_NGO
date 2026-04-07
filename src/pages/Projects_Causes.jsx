@@ -15,7 +15,7 @@ function Projects_Causes() {
         id="projects"
         className="bg-main-bg-600 w-full py-16 px-6 md:px-12 lg:px-16"
       >
-        <div className="max-w-7xl mx-auto space-y-12">
+        <div className="mx-auto space-y-12">
           <div className="text-main-text space-y-4 max-w-2xl">
             <div className="flex items-center gap-3">
               <div className="h-1 w-10 bg-primary-500 rounded-full"></div>
@@ -35,7 +35,7 @@ function Projects_Causes() {
           <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 lg:gap-8">
             {data?.map((d, index) => (
               <li key={d.id || index} className="flex h-full">
-                <Cards data={d} />
+                {/* <Cards data={d} /> */}
               </li>
             ))}
           </ul>

@@ -7,12 +7,14 @@ import Projects_Causes from "./pages/Projects_Causes";
 import "./App.css";
 import Goals from "./pages/Goals";
 import Footer from "./pages/Footer";
+import Causes from "./pages/Causes";
 
 export default function App() {
   return (
     <>
       <main className="">
         <Navbar />
+        <Causes />
         <Home />
 
         <LazySection>

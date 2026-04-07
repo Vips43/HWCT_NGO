@@ -8,7 +8,10 @@ import Socials from "../components/Socials";
 function Home() {
   const [data, setData] = useState({});
 
-  const url = `http://localhost:3000`;
+  const url =
+    window.location.hostname === "localhost"
+      ? `http://localhost:3000`
+      : import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     const cache = {};
     const getData = async () => {

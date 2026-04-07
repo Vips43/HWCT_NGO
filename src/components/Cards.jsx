@@ -47,7 +47,7 @@ function Cards({ data }) {
         </header>
 
         {toggle && (
-          <p className="text-sm leading-relaxed text-main-text/70 line-clamp-5 flex-1">
+          <p className="text-sm leading-tight text-main-text/70 line-clamp-5 flex-1">
             {data.description}
           </p>
         )}

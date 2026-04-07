@@ -4,10 +4,13 @@ import {
   PersonStanding,
   BookOpenCheck,
 } from "lucide-react";
-import { FaHandsHoldingChild } from "react-icons/fa6";
-import { FaHandHoldingWater, FaHandsHelping } from "react-icons/fa";
+import { FaHandsHoldingChild, FaComputer } from "react-icons/fa6";
+import { FaHandHoldingWater, FaHandsHelping, FaDog } from "react-icons/fa";
 import { GiMedicines } from "react-icons/gi";
 import { IoFastFoodOutline, IoSchoolOutline } from "react-icons/io5";
+import { GrRestroomWomen } from "react-icons/gr";
+import { IoMdNutrition } from "react-icons/io";
+import { PiTreeEvergreenFill } from "react-icons/pi";
 
 export const DONATION_LINK = `http://human-welfare.org/donation-page/`;
 export const ABOUT_US = `https://human-welfare.org/about-us/`;
@@ -40,25 +43,25 @@ export const prjects = [
       },
     ],
   },
-  // {
-  //   title: "Covid-19 Relief",
-  //   label: "Medical",
-  //   description:
-  //     "The COVID-19 pandemic is one of the worst health and economic crises in modern history and it continues to require the best of humanity to overcome. Your donation to this fund will help stop COVID-19’s spread and protect us all. Now, more than ever, health workers need our support. As COVID-19 continues to spread, they’re on the front lines at this very moment—in hospitals, clinics, and triage centers around the world—putting themselves at risk to stop this pandemic. We know that health workers need training,",
-  //   img: "/covid-19.jpg",
-  //   donation: "http://human-welfare.org/donation-page/",
-  //   link: "https://human-welfare.org/covid-19-relief/",
-  // },
-  // {
-  //   title: "Project Kartavya",
-  //   label: "career",
-  //   description:
-  //     "Project Kartavya aims to work closely with stakeholders in schools especially teachers and principals to ensure that they create platforms in schools where children have the opportunities to learn about careers from activities like career exhibitions, career clubs and presentations from experts from different sectors. It also engages with the parents to build their capacity in positive parenting skills, exposure to different educational and career options, and the ways to improve the communication with their children. All these initiatives lead to creating a conducive environment at home, school and in the community.",
-  //   img: "/project-kartavya.jpg",
-  //   btnlabel: "Believe in Responsibility",
-  //   donation: "http://human-welfare.org/donation-page/",
-  //   link: "https://human-welfare.org/project-kartavya/",
-  // },
+  {
+    title: "Covid-19 Relief",
+    label: "Medical",
+    description:
+      "The COVID-19 pandemic is one of the worst health and economic crises in modern history and it continues to require the best of humanity to overcome. Your donation to this fund will help stop COVID-19’s spread and protect us all. Now, more than ever, health workers need our support. As COVID-19 continues to spread, they’re on the front lines at this very moment—in hospitals, clinics, and triage centers around the world—putting themselves at risk to stop this pandemic. We know that health workers need training,",
+    img: "/covid-19.jpg",
+    donation: "http://human-welfare.org/donation-page/",
+    link: "https://human-welfare.org/covid-19-relief/",
+  },
+  {
+    title: "Project Kartavya",
+    label: "career",
+    description:
+      "Project Kartavya aims to work closely with stakeholders in schools especially teachers and principals to ensure that they create platforms in schools where children have the opportunities to learn about careers from activities like career exhibitions, career clubs and presentations from experts from different sectors. It also engages with the parents to build their capacity in positive parenting skills, exposure to different educational and career options, and the ways to improve the communication with their children. All these initiatives lead to creating a conducive environment at home, school and in the community.",
+    img: "/project-kartavya.jpg",
+    btnlabel: "Believe in Responsibility",
+    donation: "http://human-welfare.org/donation-page/",
+    link: "https://human-welfare.org/project-kartavya/",
+  },
   {
     title: "Project Poshan",
     label: "NUTRITION",
@@ -216,7 +219,6 @@ export const prjects = [
     link: "https://human-welfare.org/celebrate-your-happiness-at-the-animal-welfare-centre/",
   },
 ];
-
 export const partner = [
   {
     label:
@@ -239,7 +241,6 @@ export const partner = [
     icon: BookOpenCheck,
   },
 ];
-
 export const blogs = [
   {
     title: "“HWCT helps in Distribution of Food”- Kamakshi Verma",
@@ -365,7 +366,6 @@ export const blogs = [
     link: "https://human-welfare.org/hwct-helps-in-rescuing-cat-alisa-kamakshi-verma/",
   },
 ];
-
 export const goals = [
   {
     label: "No Poverty",
@@ -392,7 +392,6 @@ export const goals = [
     icon: IoFastFoodOutline,
   },
 ];
-
 // footer section
 export const initiatives = [
   {
@@ -430,4 +429,143 @@ export const quickLinks = [
     link: "http://human-welfare.org/wp-content/uploads/2024/03/HWCT-ANNUAL-REPORT-2024.pdf",
   },
   { label: "donate", link: "http://human-welfare.org/donation-page/" },
+];
+
+export const causes = [
+  {
+    category: "Women Empowerment",
+    icon: GrRestroomWomen,
+    icClr: "#FF88BA",
+    items: [
+      {
+        id: "wom1",
+        label: "Tailoring cost towards Skill Learning:3000/-(Per Women)",
+        amt: 3000,
+      },
+      {
+        id: "wom2",
+        label: "Fabrics for Rags to Bags Initiative:2000/-(200 Bags)",
+        amt: 2000,
+      },
+      {
+        id: "wom3",
+        label:
+          "Operational Expenses for the initiative: 1500/- (Will help us to cover salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+  {
+    category: "Green Revolution",
+    icon: PiTreeEvergreenFill,
+    icClr: "#346739",
+    items: [
+      {
+        id: "rev1",
+        label: "Garden maintenance serving 180 children: 3000/-",
+        amt: 3000,
+      },
+      {
+        id: "rev2",
+        label: "plant the vegetables: 1500/- (Appx. area 200 Sqft)",
+        amt: 1500,
+      },
+      {
+        id: "rev3",
+        label: "Plantation Drive: 1250/- (will help us plant 10neem trees)",
+        amt: 1250,
+      },
+    ],
+  },
+  {
+    category: "Nutrition",
+    icon: IoMdNutrition,
+    icClr: "#346739",
+    items: [
+      {
+        id: "nut1",
+        label: "Garden maintenance serves 180childs: 3000/-",
+        amt: 3000,
+      },
+      {
+        id: "nut2",
+        label: "Fruits and Milk for the Events:5500/-(Event)",
+        amt: 5500,
+      },
+      {
+        id: "nut3",
+        label: "Medical Camp: 5000/-(will support 50 childs)",
+        amt: 5000,
+      },
+    ],
+  },
+  {
+    category: "Animal Welfare",
+    icClr: "#DD9E59",
+    icon: FaDog,
+    items: [
+      {
+        id: "res1",
+        label: "Feeding Drives for Strays: 3000/- (Appx. 200 strays)",
+        amt: 3000,
+      },
+      {
+        id: "res2",
+        label: "Neutering/Spaying for strays: 2000/-(Per Cat/Dog)",
+        amt: 2000,
+      },
+      {
+        id: "res3",
+        label:
+          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+
+  {
+    category: "Education",
+    icon: GraduationCap,
+    icClr: "#262626",
+    items: [
+      {
+        id: "edu1",
+        label: "Note Books and stationery for 180 children: 9000/-",
+        amt: 9000,
+      },
+      {
+        id: "edu2",
+        label: "Fees for girl child: 4800/- (Per Child / Yearly Fees)",
+        amt: 4800,
+      },
+      {
+        id: "edu3",
+        label: "Uniforms, shoes and bags: 750/- (Per Child)",
+        amt: 750,
+      },
+    ],
+  },
+  {
+    category: "Digital Learning",
+    icon: FaComputer,
+    icClr: "gray",
+    items: [
+      {
+        id: "dig1",
+        label: "Computers to have the Digital Access: 5000/- (Part Donation)",
+        amt: 5000,
+      },
+      {
+        id: "dig2",
+        label: "Digital Learning: 1500/- (Per Child / Yearly Fees)",
+        amt: 1500,
+      },
+      {
+        id: "dig3",
+        label:
+          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
 ];
