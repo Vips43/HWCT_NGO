@@ -27,9 +27,8 @@ function Causes() {
         {causes.map((c) => (
           <CausesCard key={c.category} cause={c} causes={causes} />
         ))}
-      </div>
+      </div> */}
 
-      <p className="text-2xl font-bold text-white text-center">Version 2</p>
       <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
         {causes.map((c) => (
           <CausesCard1 key={c.category} cause={c} causes={causes} />

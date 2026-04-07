@@ -19,7 +19,7 @@ function Home() {
         {/* Headline */}
         <header>
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-[2px] w-8 bg-primary-500 rounded-full"></span>
+            <span className="h-0.5 w-8 bg-primary-500 rounded-full"></span>
             <span className="text-primary-500 font-bold uppercase tracking-widest text-sm">
               Human Welfare Charitable Trust
             </span>
