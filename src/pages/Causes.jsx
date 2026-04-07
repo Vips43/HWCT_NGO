@@ -1,6 +1,7 @@
 import React from "react";
 import CausesCard from "../components/CausesCard";
 import { causes } from "../data/data";
+import CausesCard1 from "../components/CausesCard1";
 
 function Causes() {
   return (
@@ -23,9 +24,17 @@ function Causes() {
         </div>
       </header>
 
+      <p className="text-2xl font-bold text-white text-center">Version 1</p>
       <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
         {causes.map((c) => (
           <CausesCard key={c.category} cause={c} causes={causes} />
+        ))}
+      </div>
+
+      <p className="text-2xl font-bold text-white text-center">Version 2</p>
+      <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
+        {causes.map((c) => (
+          <CausesCard1 key={c.category} cause={c} causes={causes} />
         ))}
       </div>
     </section>

@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 
 function Socials() {
   return (
-    <div className="flex flex-wrap justify-center gap-3 *:p-3 *:aspect-square *:rounded-full *:grid *:place-items-center *:transition-all *:text-4xl">
+    <div className="flex flex-wrap justify-center gap-3 *:p-3 *:aspect-square *:rounded-full *:grid *:place-items-center *:transition-all *:duration-300 *:text-3xl">
       <a href="https://www.facebook.com/hwctindia" className=" text-blue-700 bg-white/5 hover:text-white hover:bg-blue-700">
         <FaFacebookF />
       </a>
