@@ -71,23 +71,7 @@ export const prjects = [
     btnlabel: "Donate for Food",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/project-poshan/",
-    causes: [
-      {
-        label: "Garden maintenance serves 180childs: 3000/-",
-        amt: "3000",
-        id: "nut1",
-      },
-      {
-        label: "Fruits and Milk for the Events:5500/-(Event)",
-        amt: "5500",
-        id: "nut2",
-      },
-      {
-        label: "Medical Camp: 5000/-(will support 50 childs)",
-        amt: "5000",
-        id: "nut3",
-      },
-    ],
+    
   },
   {
     title: "Project Magic Box",
@@ -98,24 +82,7 @@ export const prjects = [
     btnlabel: "Donate for Learning",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/project-magic-box/",
-    causes: [
-      {
-        label: "Computers to have the Digital Access: 5000/- (Part Donation)",
-        amt: "5000",
-        id: "dig1",
-      },
-      {
-        label: "Digital Learning: 1500/- (Per Child / Yearly Fees)",
-        amt: "1500",
-        id: "dig2",
-      },
-      {
-        label:
-          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
-        amt: "1500",
-        id: "dig3",
-      },
-    ],
+    
   },
   {
     title: "Animal Welfare",
@@ -126,77 +93,7 @@ export const prjects = [
     btnlabel: "Donate for Strays",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/animal-welfare/",
-    causes: [
-      {
-        label: "Feeding Drives for Strays: 3000/- (Appx. 200 strays)",
-        amt: "3000",
-        id: "res1",
-      },
-      {
-        label: "Neutering/Spaying for strays: 2000/-(Per Cat/Dog)",
-        amt: "2000",
-        id: "res2",
-      },
-      {
-        label:
-          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
-        amt: "1500",
-        id: "res3",
-      },
-    ],
-  },
-  {
-    title: "Green Revolution",
-    label: "revolution",
-    description: "",
-    img: "/green-revolution.jpg",
-    btnlabel: "Donate",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "",
-    causes: [
-      {
-        label: "Garden maintenance serving 180 children: 3000/-",
-        amt: "3000",
-        id: "rev1",
-      },
-      {
-        label: "plant the vegetables: 1500/- (Appx. area 200 Sqft)",
-        amt: "1500",
-        id: "rev2",
-      },
-      {
-        label: "Plantation Drive: 1250/- (will help us plant 10neem trees)",
-        amt: "1250",
-        id: "rev3",
-      },
-    ],
-  },
-  {
-    title: "Women Empowerment",
-    label: "empowerment",
-    description: "",
-    img: "/women-empowerment.jpg",
-    btnlabel: "Donate",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "",
-    causes: [
-      {
-        label: "Tailoring cost towards Skill Learning:3000/-(Per Women)",
-        amt: "3000",
-        id: "wom1",
-      },
-      {
-        label: "Fabrics for Rags to Bags Initiative:2000/-(200 Bags)",
-        amt: "2000",
-        id: "wom2",
-      },
-      {
-        label:
-          "Operational Expenses for the initiative: 1500/- (Will help us to cover salaries)",
-        amt: "1500",
-        id: "wom3",
-      },
-    ],
+    
   },
   {
     title: "Celebrate your happiness at Orphanage",
@@ -392,7 +289,6 @@ export const goals = [
     icon: IoFastFoodOutline,
   },
 ];
-// footer section
 export const initiatives = [
   {
     label: "shelter of love",

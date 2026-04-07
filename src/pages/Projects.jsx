@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import { prjects } from "../data/data";
 
-function Projects_Causes() {
+function Projects() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function Projects_Causes() {
           <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 lg:gap-8">
             {data?.map((d, index) => (
               <li key={d.id || index} className="flex h-full">
-                {/* <Cards data={d} /> */}
+                <Cards data={d} />
               </li>
             ))}
           </ul>
@@ -45,4 +45,4 @@ function Projects_Causes() {
   );
 }
 
-export default Projects_Causes;
+export default Projects;

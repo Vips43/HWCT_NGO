@@ -1,30 +1,9 @@
 import Typewriter from "typewriter-effect";
 import Button from "../components/Button";
 import { ABOUT_US, DONATION_LINK } from "../data/data";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import Socials from "../components/Socials";
 
 function Home() {
-  const [data, setData] = useState({});
-
-  const url =
-    window.location.hostname === "localhost"
-      ? `http://localhost:3000`
-      : import.meta.env.VITE_BACKEND_URL;
-  useEffect(() => {
-    const cache = {};
-    const getData = async () => {
-      if (cache.results) {
-        return cache.results;
-      }
-      let results = await axios.get(`${url}/data`);
-      results = results.data;
-      cache.results = results;
-      setData(results);
-    };
-    getData();
-  }, []);
 
   const labels = [
     "No Poverty",
@@ -70,29 +49,12 @@ function Home() {
           </div>
         </div>
 
-        {/* Dynamic Stats Row */}
-        {data && (
-          <div className="flex gap-6 pt-2 overflow-x-auto scrollbar-hidden">
-            {Object.entries(data).map(([label, value]) => (
-              <div
-                key={label}
-                className="group shrink-0 flex flex-col items-center md:items-start justify-center"
-              >
-                <span className="text-2xl md:text-4xl font-extrabold text-primary-400 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
-                  {value || "0"}+
-                </span>
-                <span className="text-[9px] md:text-xs font-medium text-main-text/70 text-center md:text-left uppercase tracking-wider mt-1">
-                  {label}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
+        {/* live data  */}
+
+        
       </div>
 
-      {/* RIGHT COLUMN (Unchanged) */}
       <div className="bg-main-bg-200 p-8 md:p-16 flex flex-col justify-center space-y-10 group relative overflow-hidden">
-        {/* ... your existing right column code stays exactly the same ... */}
         <div className="absolute top-[-15%] right-[-15%] w-96 h-96 bg-primary-500/5 rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-125 pointer-events-none"></div>
 
         <div className="space-y-6 relative z-10 text-black">
