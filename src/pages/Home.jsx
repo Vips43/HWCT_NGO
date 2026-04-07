@@ -5,15 +5,6 @@ import Socials from "../components/Socials";
 
 function Home() {
 
-  const labels = [
-    "No Poverty",
-    "Zero Hunger",
-    "Quality Education",
-    "Clean Water",
-    "Good Health",
-    "Partnership",
-  ];
-
   return (
     <section id="home" className="grid lg:grid-cols-2 min-h-[85vh]">
       {/* LEFT COLUMN */}
@@ -51,7 +42,7 @@ function Home() {
 
         {/* live data  */}
 
-        
+
       </div>
 
       <div className="bg-main-bg-200 p-8 md:p-16 flex flex-col justify-center space-y-10 group relative overflow-hidden">
@@ -90,16 +81,7 @@ function Home() {
         </div>
 
         <div className="relative z-10">
-          <ul className="flex flex-wrap gap-3 mb-3">
-            {labels.map((label, index) => (
-              <li
-                key={index}
-                className="px-4 py-2 bg-primary/40 border border-primary/20 text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 cursor-default"
-              >
-                {label}
-              </li>
-            ))}
-          </ul>
+          
           <Socials />
         </div>
 
