@@ -9,7 +9,7 @@ import { FaHandHoldingWater, FaHandsHelping, FaDog } from "react-icons/fa";
 import { GiMedicines } from "react-icons/gi";
 import { IoFastFoodOutline, IoSchoolOutline } from "react-icons/io5";
 import { GrRestroomWomen } from "react-icons/gr";
-import { IoMdNutrition } from "react-icons/io";
+import { IoNutritionOutline } from "react-icons/io5";
 import { PiTreeEvergreenFill } from "react-icons/pi";
 
 export const DONATION_LINK = `http://human-welfare.org/donation-page/`;
@@ -363,7 +363,7 @@ export const causes = [
       },
       {
         id: "rev2",
-        label: "plant the vegetables: 1500/- (Appx. area 200 Sqft)",
+        label: "Plant the vegetables: 1500/- (Appx. area 200 Sqft)",
         amt: 1500,
       },
       {
@@ -375,7 +375,7 @@ export const causes = [
   },
   {
     category: "Nutrition",
-    icon: IoMdNutrition,
+    icon: IoNutritionOutline,
     icClr: "#346739",
     items: [
       {
