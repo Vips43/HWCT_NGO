@@ -2,14 +2,13 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-  FaLinkedinIn, // Note: FaLinkedinIn usually looks better centered in circles than FaLinkedin
+  FaLinkedinIn, 
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-// 1. Store the data in an array to keep the JSX clean
 const socialLinks = [
   {
     name: "Facebook",
@@ -98,7 +97,7 @@ function Socials() {
               ${link.color} ${link.hoverBg}
             `}
           >
-            <Icon className="text-xl md:text-2xl" />
+            <Icon className="text-2xl md:text-3xl" />
           </a>
         );
       })}

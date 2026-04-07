@@ -4,8 +4,6 @@ import { ABOUT_US, DONATION_LINK } from "../data/data";
 import Socials from "../components/Socials";
 
 function Home() {
-  // Mock data to replace the empty "live data" comment.
-  // You can replace this with your actual Axios fetch logic later.
   const impactStats = [
     { label: "Lives Impacted", value: "50,000" },
     { label: "Villages Reached", value: "120" },
@@ -17,12 +15,11 @@ function Home() {
       id="home"
       className="grid lg:grid-cols-2 min-h-[85vh] bg-main-bg-600"
     >
-      {/* ================= LEFT COLUMN: THE HOOK & ACTION ================= */}
+      {/* ===== LEFT COLUMN: THE HOOK & ACTION ===== */}
       <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center space-y-10 relative z-10">
-        {/* Headline */}
         <header>
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-[2px] w-8 bg-primary-500 rounded-full"></span>
+            <span className="h-0.5 w-8 bg-primary-500 rounded-full"></span>
             <span className="text-primary-500 font-bold uppercase tracking-widest text-sm">
               Human Welfare Charitable Trust
             </span>
@@ -89,7 +86,7 @@ function Home() {
         {/* Background Decorative Glow */}
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-125 pointer-events-none"></div>
 
-        <div className="space-y-10 relative z-10 flex-1 flex flex-col justify-center">
+        <div className="space-y-10 relative z-10 flex-1 flex flex-col ">
           {/* Vision Block */}
           <div className="space-y-6">
             <div className="flex items-center gap-4">
@@ -119,29 +116,36 @@ function Home() {
             </p>
           </div>
 
-          <div className="relative text-center flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
-            {/* Socials Block */}
-            <div className="space-y-3 mx-auto">
-              <h3 className="text-xl font-bold uppercase tracking-wider text-main-bg-600">
-                Connect With Us
-              </h3>
-              <Socials />
-            </div>
+          {/* Socials Block */}
+          <div className="space-y-3 mb-10 mx-auto">
+            <h3 className="text-xl text-center font-bold uppercase tracking-wider text-main-bg-600">
+              Connect With Us
+            </h3>
+            <Socials />
           </div>
         </div>
 
-        <a
-          href="http://human-welfare.org/wp-content/uploads/2022/12/HWCT-Brief-Brochure-Email.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 mt-14 lg:mt-0 bg-gray-900 text-white text-sm font-bold rounded-xl hover:-translate-y-1 hover:bg-primary-700 w-fit hover:shadow-xl transition-all duration-300 whitespace-nowrap flex items-center gap-2"
-        >
-          <span>Download Brochure</span>
-          <span className="text-lg">↓</span>
-        </a>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 relative z-10">
+          <div className="space-y-2">
+            <h3 className="text-primary-700 font-bold uppercase tracking-wider text-sm">
+              HWCT India
+            </h3>
+            <h2 className="text-3xl font-bold">Why Us?</h2>
+            <p className="max-w-sm text-sm">
+              Our vision and dedication have proven to create a significant
+              impact in changing the lives of many for the better.
+            </p>
+          </div>
+
+          <button className="px-8 py-4 bg-main-text text-gray-700 font-bold rounded-xl hover:-translate-y-1 hover:shadow-xl hover:shadow-main-text/20 transition-all duration-300 whitespace-nowrap">
+            Download Brochure
+          </button>
+        </div>
       </div>
     </section>
   );
 }
 
 export default Home;
+
+// href="http://human-welfare.org/wp-content/uploads/2022/12/HWCT-Brief-Brochure-Email.pdf"

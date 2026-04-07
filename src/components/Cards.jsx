@@ -8,7 +8,7 @@ function Cards({ data }) {
           className="absolute inset-0 h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
           loading="lazy"
         />
-        
+
         <div className="absolute inset-0 bg-linear-to-t from-main-bg-700 via-transparent to-transparent opacity-80" />
       </figure>
 
@@ -31,11 +31,9 @@ function Cards({ data }) {
           </a>
         </header>
 
-        {/* Description is now always visible since the toggle is gone */}
         <p className="text-sm leading-tight text-main-text/70 line-clamp-5 flex-1">
           {data.description}
         </p>
-
       </div>
     </article>
   );

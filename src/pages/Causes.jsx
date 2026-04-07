@@ -23,13 +23,13 @@ function Causes() {
           </p>
         </div>
       </header>
-      <p className="text-center text-white text-2xl font-bold">version 1</p>
-      <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
+      
+      {/* <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
         {causes.map((c) => (
           <CausesCard key={c.category} cause={c} causes={causes} />
         ))}
-      </div>
-      <p className="text-center text-white text-2xl font-bold">version 2</p>
+      </div> */}
+    
       <div className="my-5 px-5 md:px-10 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-2">
         {causes1.map((c) => (
           <CausesCard1 key={c.category} cause={c} causes={causes} />
