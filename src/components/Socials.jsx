@@ -2,44 +2,106 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-  FaLinkedin,
+  FaLinkedinIn, // Note: FaLinkedinIn usually looks better centered in circles than FaLinkedin
   FaTwitter,
   FaWhatsapp,
-  FaLocationArrow,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
+// 1. Store the data in an array to keep the JSX clean
+const socialLinks = [
+  {
+    name: "Facebook",
+    icon: FaFacebookF,
+    url: "https://www.facebook.com/hwctindia",
+    color: "text-blue-500",
+    hoverBg: "hover:bg-blue-600 hover:text-white hover:shadow-blue-500/20",
+  },
+  {
+    name: "Instagram",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/hwctindia",
+    color: "text-pink-600",
+    hoverBg: "hover:bg-pink-600 hover:text-white hover:shadow-pink-600/20",
+  },
+  {
+    name: "YouTube",
+    icon: FaYoutube,
+    url: "https://www.youtube.com/@hwctindia",
+    color: "text-red-600",
+    hoverBg: "hover:bg-red-600 hover:text-white hover:shadow-red-600/20",
+  },
+  {
+    name: "LinkedIn",
+    icon: FaLinkedinIn,
+    url: "https://www.linkedin.com/company/hwctindia",
+    color: "text-blue-600",
+    hoverBg: "hover:bg-blue-700 hover:text-white hover:shadow-blue-700/20",
+  },
+  {
+    name: "Twitter",
+    icon: FaTwitter,
+    url: "https://twitter.com/hwctindia",
+    color: "text-cyan-500",
+    hoverBg: "hover:bg-cyan-500 hover:text-white hover:shadow-cyan-500/20",
+  },
+  {
+    name: "WhatsApp",
+    icon: FaWhatsapp,
+    url: "https://wa.me/0919820737841",
+    color: "text-green-600",
+    hoverBg: "hover:bg-green-600 hover:text-white hover:shadow-green-600/20",
+  },
+  {
+    name: "Partnerships Email",
+    icon: MdEmail,
+    url: "mailto:partnerships@hwctindia.org",
+    color: "text-white/80",
+    hoverBg: "hover:bg-main-bg-50 hover:text-main-text",
+  },
+  {
+    name: "General Info Email",
+    icon: MdEmail,
+    url: "mailto:info@human-welfare.org",
+    color: "text-white/80",
+    hoverBg: "hover:bg-main-bg-50 hover:text-main-text",
+  },
+  {
+    name: "Location",
+    icon: FaLocationDot,
+    url: "https://maps.app.goo.gl/zsmu2NinAePRuuYC8",
+    color: "text-primary-500",
+    hoverBg:
+      "hover:bg-primary-600 hover:text-white hover:shadow-primary-500/20",
+  },
+];
+
 function Socials() {
   return (
-    <div className="flex flex-wrap justify-center gap-3 *:p-3 *:aspect-square *:rounded-full *:grid *:place-items-center *:transition-all *:text-4xl">
-      <a href="https://www.facebook.com/hwctindia" className=" text-blue-700 bg-white/5 hover:text-white hover:bg-blue-700">
-        <FaFacebookF />
-      </a>
-      <a href="https://www.instagram.com/hwctindia" className="text-pink-700 bg-white/5 hover:text-white hover:bg-pink-700">
-        <FaInstagram />
-      </a>
-      <a href="https://www.youtube.com/@hwctindia" className="text-red-700 bg-white/5 hover:text-white hover:bg-red-700">
-        <FaYoutube />
-      </a>
-      <a href="https://www.linkedin.com/company/hwctindia" className="text-blue-700 bg-white/5 hover:text-white hover:bg-blue-700">
-        <FaLinkedin />
-      </a>
-      <a href="https://twitter.com/hwctindia" className="text-cyan-500 bg-white/5 hover:text-white hover:bg-cyan-700">
-        <FaTwitter />
-      </a>
-      <a href="https://wa.me/0919820737841" className="text-green-700 bg-white/5 hover:text-white hover:bg-green-700">
-        <FaWhatsapp />
-      </a>
-      <a title="partner-mail" href="mailto:partnerships@hwctindia.org" className="text-white bg-white/5 hover:text-main-bg-600 hover:bg-main-bg-50">
-        <MdEmail />
-      </a>
-      <a title="mail" href="mailto:info@human-welfare.org" className="text-white bg-white/5 hover:text-main-bg-600 hover:bg-main-bg-50">
-        <MdEmail />
-      </a>
-      <a title="location" href="https://maps.app.goo.gl/zsmu2NinAePRuuYC8" className="text-primary-700 bg-white/5 hover:text-main-bg-600 hover:bg-primary-700">
-        <FaLocationDot />
-      </a>
+    <div className="flex flex-wrap justify-center md:justify-start gap-3">
+      {socialLinks.map((link, index) => {
+        const Icon = link.icon;
+
+        return (
+          <a
+            key={index}
+            href={link.url}
+            title={link.name}
+            aria-label={link.name}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`
+              w-12 h-12 flex items-center justify-center rounded-full bg-white/5 
+              transition-all duration-300 ease-out
+              hover:-translate-y-1 hover:scale-110 hover:shadow-lg
+              ${link.color} ${link.hoverBg}
+            `}
+          >
+            <Icon className="text-xl md:text-2xl" />
+          </a>
+        );
+      })}
     </div>
   );
 }

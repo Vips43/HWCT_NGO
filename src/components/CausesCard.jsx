@@ -27,14 +27,29 @@ function CausesCard({ cause }) {
 
   const btn = {
     backgroundColor: isHovered ? "rgba(43, 40, 40, 0.4)" : "#5a5a5a",
-    color: "white", 
+    color: "white",
   };
 
   const handleChange = (e) => {
     if (e.target.type === "radio") {
       const amount = e.target.dataset.amt;
-      setSelectedAmt(amount); 
+      setSelectedAmt(amount);
     }
+  };
+
+  const handleDonate = () => {
+    if (!selectedAmt) {
+      alert("Please select amount.");
+      return;
+    }
+
+    const yourUpiId = "YOUR_NGO_UPI_ID@paytm"; 
+    const payeeName = "HWCT India";
+
+    // This is the universal UPI deep link format
+    const upiLink = `upi://pay?pa=${yourUpiId}&pn=${encodeURIComponent(payeeName)}&am=${selectedAmt}&cu=INR`;
+
+    window.open(paytmURL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -73,6 +88,7 @@ function CausesCard({ cause }) {
         type="button"
         className="px-3 py-1 my-3 rounded-xl font-semibold transition-all duration-300"
         style={btn}
+        onClick={handleDonate}
       >
         Donate {selectedAmt && ` - ₹${selectedAmt}`}
       </button>

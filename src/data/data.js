@@ -25,23 +25,6 @@ export const prjects = [
     btnlabel: "Donate for Education",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/shelter-of-love-naigaon/",
-    causes: [
-      {
-        label: "Note Books and stationery for 180 children: 9000/-",
-        amt: 9000,
-        id: "edu1",
-      },
-      {
-        label: "Fees for girl child: 4800/- (Per Child / Yearly Fees)",
-        amt: 4800,
-        id: "edu2",
-      },
-      {
-        label: "Uniforms, shoes and bags: 750/- (Per Child)",
-        amt: 750,
-        id: "edu3",
-      },
-    ],
   },
   {
     title: "Covid-19 Relief",
@@ -71,7 +54,6 @@ export const prjects = [
     btnlabel: "Donate for Food",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/project-poshan/",
-    
   },
   {
     title: "Project Magic Box",
@@ -82,7 +64,6 @@ export const prjects = [
     btnlabel: "Donate for Learning",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/project-magic-box/",
-    
   },
   {
     title: "Animal Welfare",
@@ -93,27 +74,6 @@ export const prjects = [
     btnlabel: "Donate for Strays",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/animal-welfare/",
-    
-  },
-  {
-    title: "Celebrate your happiness at Orphanage",
-    label: "Celebrate",
-    description:
-      "Hello everyone! There are many ideas to celebrate your special occasions. But sharing your happiness by providing food to needy and hungry poor people makes your celebration more joyous and happiness for yourself. For example, your or loved one’s birthday is a special day. You came into this world for a reason and with many milestones. And what better way to celebrate your accomplishments by contributing and sharing it with people who need support. You can plan your birthday in a unique way. You can bring along your friends and families and distribute or donate things which a school or an NGO would need to help various sections of society.",
-    img: "/celebration-artwork.jpg",
-    btnlabel: "Donate old Age",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "https://human-welfare.org/celebrate-your-happiness-at-the-orphanage-or-old-age-home/",
-  },
-  {
-    title: "Celebrate your happiness at Animal Centre",
-    label: "Celebrate",
-    description:
-      "Hello everyone! There are many ideas to celebrate your special occasions. But sharing your happiness by providing food to needy and hungry animals makes your celebration more joyous and happiness for yourself. For example, your or loved one’s birthday is a special day. You came into this world for a reason and with many milestones. And what better way to celebrate your accomplishments by contributing and sharing it with strays who need support. You can plan your birthday in a unique way. You can bring along your friends and families and distribute or donate things which a school or an NGO would need to help various sections of society.",
-    img: "/celebration-artwork.jpg",
-    btnlabel: "Donate for Strays",
-    donation: "http://human-welfare.org/donation-page/",
-    link: "https://human-welfare.org/celebrate-your-happiness-at-the-animal-welfare-centre/",
   },
 ];
 export const partner = [
@@ -396,30 +356,6 @@ export const causes = [
     ],
   },
   {
-    category: "Animal Welfare",
-    icClr: "#DD9E59",
-    icon: FaDog,
-    items: [
-      {
-        id: "res1",
-        label: "Feeding Drives for Strays: 3000/- (Appx. 200 strays)",
-        amt: 3000,
-      },
-      {
-        id: "res2",
-        label: "Neutering/Spaying for strays: 2000/-(Per Cat/Dog)",
-        amt: 2000,
-      },
-      {
-        id: "res3",
-        label:
-          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
-        amt: 1500,
-      },
-    ],
-  },
-
-  {
     category: "Education",
     icon: GraduationCap,
     icClr: "#262626",
@@ -458,6 +394,29 @@ export const causes = [
       },
       {
         id: "dig3",
+        label:
+          "Operational Expenses: 1500/- (Will help us to cover the salaries)",
+        amt: 1500,
+      },
+    ],
+  },
+  {
+    category: "Animal Welfare",
+    icClr: "#DD9E59",
+    icon: FaDog,
+    items: [
+      {
+        id: "res1",
+        label: "Feeding Drives for Strays: 3000/- (Appx. 200 strays)",
+        amt: 3000,
+      },
+      {
+        id: "res2",
+        label: "Neutering/Spaying for strays: 2000/-(Per Cat/Dog)",
+        amt: 2000,
+      },
+      {
+        id: "res3",
         label:
           "Operational Expenses: 1500/- (Will help us to cover the salaries)",
         amt: 1500,
