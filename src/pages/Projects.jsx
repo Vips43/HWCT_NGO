@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
-import { prjects } from "../data/data";
+import { projects } from "../data/data";
 
 function Projects() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    setData(prjects);
-  }, []);
 
   return (
     <>
@@ -33,9 +28,9 @@ function Projects() {
           </div>
 
           <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 lg:gap-8">
-            {data?.map((d, index) => (
-              <li key={d.id || index} className="flex h-full">
-                <Cards data={d} />
+            {projects?.map((project, index) => (
+              <li key={project.id || index} className="flex h-full">
+                <Cards data={project} />
               </li>
             ))}
           </ul>

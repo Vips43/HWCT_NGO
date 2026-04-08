@@ -15,7 +15,7 @@ import { PiTreeEvergreenFill } from "react-icons/pi";
 export const DONATION_LINK = `http://human-welfare.org/donation-page/`;
 export const ABOUT_US = `https://human-welfare.org/about-us/`;
 
-export const prjects = [
+export const projects = [
   {
     title: "Shelter of Love",
     label: "Education",
@@ -32,6 +32,20 @@ export const prjects = [
     btnlabel: "Donate for Education",
     donation: "http://human-welfare.org/donation-page/",
     link: "https://human-welfare.org/shelter-of-love-naigaon/",
+  },
+  {
+    title: "Hunger Relief",
+    label: "career",
+    description: "",
+    img: [
+      "/images/projects/hunger/hunger1.jpeg",
+      "/images/projects/hunger/hunger2.jpeg",
+      "/images/projects/hunger/hunger3.jpeg",
+      "/images/projects/hunger/hunger4.jpeg",
+      "/images/projects/hunger/hunger5.jpeg",
+    ],
+    btnlabel: "Believe in Responsibility",
+    donation: "http://human-welfare.org/donation-page/",
   },
 
   {
