@@ -36,7 +36,7 @@ export const projects = [
   {
     title: "Hunger Relief",
     label: "career",
-    description: "",
+    description: "content coming soon...",
     img: [
       "/images/projects/hunger/hunger1.jpeg",
       "/images/projects/hunger/hunger2.jpeg",
