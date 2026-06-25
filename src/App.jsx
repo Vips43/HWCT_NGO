@@ -8,6 +8,8 @@ import "./App.css";
 import Goals from "./pages/Goals";
 import Footer from "./pages/Footer";
 import Causes from "./pages/Causes";
+import { Analytics } from "@vercel/analytics/next"
+
 
 export default function App() {
   return (
@@ -15,7 +17,7 @@ export default function App() {
       <main className="">
         <Navbar />
         <Home />
-
+<Analytics/>
         <LazySection>
           <Causes />
         </LazySection>
